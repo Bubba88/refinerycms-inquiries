@@ -39,7 +39,7 @@
 							</ul>
 							<div class="pagination-wrap">
 
-    									<%= will_paginate shown %>
+    									<%= will_paginate shown  %>
 							</div>
 
 							<div class="right-shadow"></div>

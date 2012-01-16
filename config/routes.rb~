@@ -13,7 +13,6 @@ Refinery::Application.routes.draw do
     resources :inquiries, :only => [:index, :show, :destroy] do
       collection do
         get :spam
-        get :publish
       end
       member do
         get :toggle_spam

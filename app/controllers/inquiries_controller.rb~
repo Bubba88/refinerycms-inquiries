@@ -28,7 +28,7 @@ class InquiriesController < ApplicationController
         end if InquirySetting.send_confirmation?
       end
 
-      redirect_to url_for(:action => :new)
+      redirect_to thank_you_inquiries_url
     else
       render :action => 'new'
     end

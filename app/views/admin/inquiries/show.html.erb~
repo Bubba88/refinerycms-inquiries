@@ -78,10 +78,6 @@
     </tr>
   </table>
   <a href="publish?id=<%= @inquiry.id %>">
-    <% if @inquiry.published then %>
-      Скрыть
-    <% else %>
-      Обубликовать
-    <% end %>
+    <%=  if !@inquiry.published 'Опубликовать' else 'Скрыть' %>
   </a>
 </div>
